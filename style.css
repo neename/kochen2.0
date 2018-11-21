@@ -34,8 +34,15 @@ color: #333333;
 }
 
 #header {
-height: 60px;
-background: gray;
+  height: 60px;
+  background: #ffffff;
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.3);
+  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.3);
+  padding-left: 1rem;
 }
 
 #navigation {
@@ -44,4 +51,36 @@ display: none;
 
 #navigation.show {
   display: block;
+}
+
+#hero {
+  background-image: url(img/intro.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+
+}
+
+.welcome{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%);
+  color: white;
+
+}
+
+.button{
+  padding: 1rem;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 4px 6px hsla(0,0,0,.2)
+}
+
+.button-white{
+  color: #374a67;
+  background: #fff;
+  border: 1px solid #374a67
 }
