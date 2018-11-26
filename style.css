@@ -122,3 +122,32 @@ display: none;
   padding: 1rem;
   display: inline-block;
 }
+
+.widget{
+background-color: #04122B;
+text-align: center;
+color: #fff;
+padding: 2rem;
+}
+
+h2 span{
+  display: block;
+  font-weight: normal;
+  font-size: 1rem;
+  }
+
+.newsletter{ /*Newsletter*/
+  margin-top: 1rem;
+  }
+
+.email{
+height: 49px;
+border-radius: 4px;
+outline: none;
+border-color: transparent;
+padding-left: 1rem;
+}
+
+.email::placeholder{ /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #04122B;
+}
