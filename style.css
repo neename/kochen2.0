@@ -3,7 +3,7 @@
   }
 
   html {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     line-height: 1.4;
     color: #333333;
   }
@@ -12,7 +12,12 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  line-height: 4rem;
 }
 
 body {
@@ -43,14 +48,28 @@ color: #333333;
   -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.3);
   box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.3);
   padding-left: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #navigation {
-display: none;
+  display: none;
+  opacity: 0;
 }
 
 #navigation.show {
   display: block;
+  text-align: center;
+  background: #fff;
+  width: 100%;
+  height: calc(100vh - 50px);
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  opacity: 1;
+  margin-top: 50px;
 }
 
 #hero {
@@ -93,7 +112,6 @@ display: none;
 }
 
 #rezepte{
-  padding: 1rem;
   text-align: center;
 }
 
@@ -111,6 +129,7 @@ display: none;
   color: #333;
   text-decoration: none;
 }
+
 .text{
   color: #828282;
 }
@@ -128,6 +147,7 @@ background-color: #04122B;
 text-align: center;
 color: #fff;
 padding: 2rem;
+margin-top: 2rem;
 }
 
 h2 span{
@@ -150,4 +170,62 @@ padding-left: 1rem;
 
 .email::placeholder{ /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: #04122B;
+}
+
+#footer a{
+text-decoration: none;
+color: #000;
+font-weight: bold;
+}
+
+ul{                       /*li wäre auch möglich*/
+  list-style-type: none;
+}
+
+#social-nav li {
+display: inline-block;
+font-size: 30px;
+padding: 5px;
+}
+
+#footer{
+  padding: 2rem;
+}
+
+#footer-nav li{
+  padding: 5px;
+}
+
+#social-nav li a:hover{
+  color: #828282;
+}
+
+@media (min-width: 48em) {
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: auto;
+  }
+
+  .card{
+    width: 48%;
+    margin: 1%;
+  }
+
+  #footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #social-nav ul{
+    display: flex;
+  }
+
+  #footer-nav li{             /* oder geht auch: #footer-nav ul{display:flex;}*/
+    padding: 1rem;
+    display: inline-block;
+  }
+
 }

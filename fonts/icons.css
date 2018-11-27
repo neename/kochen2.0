@@ -24,18 +24,18 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-youtube:before {
+.icon-youtube a:before { /*wenn a in Klasse icon ist, dann packe mir davor...Leerzeichen heißt immer "in", Komma gilt immer als Aufzählung */
   content: "\e900";
 }
-.icon-instagram:before {
+.icon-instagram a:before {
   content: "\e901";
 }
-.icon-facebook:before {
+.icon-facebook a:before {
   content: "\e902";
 }
-.icon-search:before {
+.icon-search a:before {
   content: "\e903";
 }
-.icon-menu:before {
+.icon-menu a:before {
   content: "\e904";
 }
